@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 16</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header"></header>
+			<main class="page">
+				<section class="page__main section">
+					<div class="section__container">
+						<div class="section__type">
+							<form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="section__form form">
+								<h1 class="form__title">Заповніть реєстрацію</h1>
+								<div class="form__line">
+									<label for="name" class="form__label">Ваше ім'я</label>
+									<input id="name" required autocomplete="off" name="first_name" placeholder="Ваше ім'я" type="text" class="form__input">
+								</div>
+								<div class="form__line">
+									<label for="family" class="form__label">Ваше прізвище</label>
+									<input id="family" required autocomplete="off" name="second_name" placeholder="Ваше прізвище" type="text" class="form__input">
+								</div>
+								<div class="form__line">
+									<label for="number" class="form__label">Ваш телефон</label>
+									<input id="number" required autocomplete="off" name="phone" placeholder="Ваше телефон" type="tel" class="form__input">
+								</div>
+								<div class="form__line">
+									<label for="email" class="form__label">Ваш email</label>
+									<input id="email" required autocomplete="off" name="email_post" placeholder="Ваше email" type="email" class="form__input">
+								</div>
+								<div class="form__line">
+									<h2 class="form__subtitle">Скільки вам років</h2>
+									<div class="radio__form radio">
+										<div class="radio__line">
+											<input id="age_18" type="radio" value="18-22" name="age-old" class="radio__input">
+											<label for="age_18" class="radio__label"><span class="radio__text">18-22</span></label>
+										</div>
+									</div>
+									<div class="radio__form radio">
+										<div class="radio__line">
+											<input id="age_23" type="radio" value="dog" name="age-old"   class="radio__input">
+											<label for="age_23" class="radio__label"><span class="radio__text">23-25</span></label>
+										</div>
+									</div>
+									<div class="radio__form radio">
+										<div class="radio__line">
+											<input id="age_26" type="radio" value="dog" name="age-old" class="radio__input">
+											<label for="age_26" class="radio__label"> <span class="radio__text">26-30</span> </label>
+										</div>
+									</div>
+								</div>
+								<div class="form__line checkbox">
+									<h2 class="checkbox__subtitle">Якого оберете режисера</h2>
+									<div class="checkbox__form">
+										<div class="checkbox__line">
+											<input id="numberss" class="checkbox__input" name="numberss" value="yes" type="checkbox">
+											<label for="numberss" class="checkbox__label"> <span class="checkbox__text">Крістофер Нолан</span> </label>
+										</div>
+									</div>
+									<div class="checkbox__form">
+										<div class="checkbox__line">
+											<input id="number_1" class="checkbox__input" name="numberss" value="yes" type="checkbox">
+											<label for="number_1" class="checkbox__label"> <span class="checkbox__text">Арі Астер</span> </label>
+										</div>
+									</div>
+									<div class="checkbox__form">
+										<div class="checkbox__line">
+											<input id="number_2" class="checkbox__input" name="numberss" value="yes" type="checkbox">
+											<label for="number_2" class="checkbox__label"> <span class="checkbox__text">Дарен Аранофскі</span> </label>
+										</div>
+									</div>
+									<div class="checkbox__form">
+										<div class="checkbox__line">
+											<input id="number_3" class="checkbox__input" name="numberss" value="yes" type="checkbox">
+											<label for="number_3" class="checkbox__label"> <span class="checkbox__text">Девід Фінчер</span> </label>
+										</div>
+									</div>
+								</div>
+								<div class="form__line">
+									<label for="birht" class="form__label">Вашa дата народження</label>
+									<input id="birht" required autocomplete="off" name="date_number" type="date" class="form__input">
+								</div>
+								<div class="form__line">
+									<label for="numbers" class="form__label">Ваше улюблений число</label>
+									<input id="numbers" required autocomplete="off" name="fav_number" type="number" class="form__input">
+								</div>
+								<div class="form__line">
+									<label for="pass" class="form__label">Пароль</label>
+									<input id="pass" required autocomplete="off" name="pass_number" type="password" class="form__input">
+								</div>
+								<div class="form__line">
+									<label for="foto" class="form__label">Завантажте фото</label>
+									<input id="foto" required name="image_file" accept="image/png, image/png" type="file" class="form__input">
+								</div>
+								<div class="form__line">
+									<button name="button-submit" type="submit" class="form__submit">Надіслати</button>
+								</div>
+								<div class="form__line">
+									<button name="button-reset" type="reset" class="form__reset">Скинути</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+				<section class="page-forms forms-page">
+					<div class="forms-page__container">
+						<div class="forms-page__body body-forms">
+							<div class="body-forms__image">
+								<img class="body-forms__pic" src="img/illustration.svg" alt="#">
+							</div>
+							<div class="body-forms__content">
+								<div class="body-forms__text text">
+									<h3 class="text__subtitle">Any questions?</h3>
+									<h4 class="text__title">Drop us a line</h4>
+								</div>
+								<div class="body-forms__section form-section">
+									<form class="form-section__body" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+										<div class="form-section__line">
+											<label for="name-first" class="form-section__label">First name*</label>
+											<input id="name-first" class="form-section__input" type="text" required autocomplete="off" placeholder="Your first name">
+										</div>
+										<div class="form-section__line">
+											<label for="second-name" class="form-section__label">Last name*</label>
+											<input id="second-name" class="form-section__input" type="text" required autocomplete="off" placeholder="Your last name">
+										</div>
+										<div class="form-section__line">
+											<label for="address" class="form-section__label">Email*</label>
+											<input id="address" class="form-section__input" type="email" name="post__email" required autocomplete="off" placeholder="Your working email">
+										</div>
+										<div class="form-section__line">
+											<label for="number-phone" class="form-section__label">Phone</label>
+											<input id="number-phone" class="form-section__input" type="tel" name="phone-number" required placeholder="Your phone number">
+										</div>
+										<div class="form-section__line--message">
+											<label for="textarea" class="form-section__label">Message*</label>
+											<textarea id="textarea" class="form-section__area" placeholder="Your massage" name="message" autocomplete="off"></textarea>
+										</div>
+										<div class="form-section__block-line">
+											<div class="form-section__checkbox checkbox-button">
+												<input id="agree" class="checkbox-button__input" name="numberss" value="yes" type="checkbox">
+												<label for="agree" class="checkbox-button__label"> <span class="checkbox-button__text">I agree to receive communications from Createx Online School</span> </label>
+											</div>
+											<div class="form-section__button button-form">
+												<button name="button-submit" type="submit" class="button-form__input">Send message</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer"></footer>
+		</div>
+	</body>
+</html>
